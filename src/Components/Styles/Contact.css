@@ -1,0 +1,81 @@
+header{
+    width: 100vw;
+    height: 35vh;
+    background-color: #1d2c45;
+    color: rgb(235, 230, 230);
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.main-image-box{
+    height: 75vh;
+    margin-right: 3vh;
+    position: relative;
+    top: 1vh;
+    float: right;
+}
+.main-image-box img{
+    filter: drop-shadow(1px 1px 5px black);
+    height: 100%;
+    rotate: 180deg;
+}
+
+.contact-form{
+    padding: 5vh;
+    background-color: white;
+    position: relative;
+    bottom: 10vh;
+    margin-left: 5vh;
+    box-shadow: 1px 1px 10px 2px rgb(37, 36, 36);
+    border-radius: 5px;
+}
+input{
+    padding: 3px;
+    margin: 0px auto;
+}
+#name,#email{
+    width: 48%;
+    margin: 0px 3px;
+}
+#subject{
+    width: 98%;
+}
+#message{
+    width: 98%;
+}
+
+
+
+@media screen and (max-width:800px) {
+    main{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .contact-form{
+        align-self: flex-start;
+        margin: 2vh;
+    }
+    .main-image-box{
+        align-self:flex-end;
+        rotate: 270deg;
+        right: 5vh;
+        margin: 1vh;
+    }
+   
+}
+@media screen and (max-width:500px) {
+    #name,#email{
+        width: 98%;
+    }
+   
+}
